@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function alphabetPosition(str) {
+            return str.split('').map(a => ' abcdefghijklmnopqrstuvwxyz'.indexOf(a.toLowerCase())).filter(a => a != -1).filter(a => a != 0).join(' '); 
+        }
+        console.log(alphabetPosition('The narwhal bacons at midnight.'));
+    </script>
+</body>
+</html>
