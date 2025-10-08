@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = null;
+        let b = [];
+        let A = a == null ? a : a.sort((a,b) => a - b);
+        let B = b == null ? b : b.sort((a,b) => a - b);
+        let ans = a == null || b == null ? false : A.reduce((a,b,i) => a && (b*b) == B[i], true);
+        console.log(ans);
+    </script>
+    </script>
+</body>
+</html>
