@@ -7,44 +7,20 @@
 </head>
 <body>
     <script>
-       /*  let str = 'Aba';
-        let i = 0;
-        let arr = [...str].map(a => a.charCodeAt(i)).reduce((a,b) => a + b, 0)
-        console.log(arr) */
-
-        
         let list1 = [
                         { firstName: 'Aba', lastName: 'N.', country: 'Ghana', continent: 'Africa', age: 21, language: 'Python' },
                         { firstName: 'Abb', lastName: 'O.', country: 'Israel', continent: 'Asia', age: 39, language: 'Java' }
                     ];
-
-
         function findOddNames(list1) {
             let result = [];
             for(let i of list1) {
                 let arr = [...i.firstName].map(a => a.charCodeAt(0)).reduce((a,b) => a + b);
-                
-                if(arr % 2 !== 0) {
-                    result.push(i);
-                }
+                if(arr % 2 !== 0) result.push(i);
             }
             return result;
         }
         let ans = findOddNames(list1);
         console.log(ans);
-        /* 
-        [
-            { firstName: 'Abb', lastName: 'O.', country: 'Israel', continent: 'Asia', age: 39, language: 'Java' }
-        ]
-        */
-
-
-
-
-
-
-
-
     </script>
 </body>
 </html>
